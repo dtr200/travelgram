@@ -1,0 +1,13 @@
+.test{
+    display: block;
+    &--block{
+        color: white;
+    }
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+.classs{
+    color: white
+}
