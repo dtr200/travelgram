@@ -1,0 +1,19 @@
+.search-form{
+    width: 220px;
+    @include flex($align: center);
+    position: relative;
+}
+.search-form__input{
+    @include font($size: 14px, $weight: 300);
+    font-family: "Merriweather";
+    font-style: italic;
+    color:$main-ligth-gray;
+    border: none;
+    width: 150px;
+}
+.search-form__button{
+    height: 13px;
+    width: 14px;
+    background: url('/img/svg/search.svg') no-repeat;
+    border: none;
+}

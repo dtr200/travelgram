@@ -1,0 +1,110 @@
+.main-gallery{
+    @include flex($just: space-between, $direct: column);
+    background: url('/img/header.jpg');
+    background-size: cover;
+    height: 886px;
+    padding: 152px 0 93px 40px;
+    margin-bottom: 40px;
+    box-shadow: 0px 25px 25px 0 #c2c2c2;
+}
+.main-gallery__tagline{
+    display: block;
+    width: fit-content;    
+}
+.main-gallery__tagline-header{
+    display: block;
+    font-family: "Bank Gothic BT";
+    @include font($size: 48px, $weight: 300, $height: 36px);  
+    color: white;   
+}
+.main-gallery__tag-wrapper{
+    width: fit-content;
+    margin: auto;
+}
+.main-gallery__tagline-tag{
+    @include font($size: 16px, $weight: bold, $height: 15px, $space: 0px);
+    @include text($color: white, $trans: uppercase);   
+    &::before{
+        content: "";
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        background: url('/img/corner.png') no-repeat;
+        position: relative;
+        top: 2px;
+        margin-right: 5px;
+    }
+}
+.main-gallery__blog{
+    font-family: "Myriad Pro";
+    @include font($size: 18px, $weight: bold, $height: 19px);
+    @include text($align: center, $color: white, $trans: uppercase);
+}
+.main-gallery__header{
+    font-family: "Zurich BT";
+    @include font($size: 44px, $weight: 800, $height: 34px, $space: -1px);
+    @include text($color: white, $trans: uppercase);
+}
+.main-gallery__main-wrapper{
+    display: flex;
+    gap: 22px;
+    margin-top: 26px;
+}
+.main-gallery__nav{
+    @include flex($direct: column);
+    gap: 6px;
+}
+.main-gallery__nav-button{
+    width: 45px;
+    height: 45px;
+    background: none;
+    border: 1px solid white;
+    &:hover{
+        background-color: $red;
+    }
+}
+/* .main-gallery__button{
+    position: relative;
+    width: 150px;
+    height: 46px;
+    margin: 0 0 37px 0;
+    background-color: $main-yellow;
+    border: none;
+    font-family: "Myriad Pro";
+    @include font($size: 18px, $weight: bold, $height: 18px, $space: 0px);
+    @include text($color: black, $trans: uppercase);
+    &::after{
+        content: "";
+        display: block;
+        width: 10px;
+        height: 10px;
+        background: url('/img/corner-black.png');
+        position: absolute;
+        top: 3px;
+        right: 3px;
+    }
+} */
+.main-gallery__text{
+    @include flex($direct: column);
+}
+.main-gallery__description{
+    width: 517px;
+    margin: 19px 0 33px 0;
+    font-family: "Myriad Pro";
+    @include font($size: 15px, $height: 19px, $space: 0px);
+    color: white;    
+}
+.main-gallery__dots-list{
+    @include flex();
+    padding-left: 0;
+    list-style-type:none;
+    color: white;
+    gap: 4px;
+    margin-top: 37px;
+}
+.main-gallery__dot{
+    width: 8px;
+    height: 8px;
+    border: 1px solid white;
+    border-radius: 50%;
+}

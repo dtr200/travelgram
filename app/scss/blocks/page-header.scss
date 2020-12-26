@@ -1,0 +1,22 @@
+.page-header{
+    width: 1920px;
+    height: 313px;
+    @include flex($just: space-between, $direct: column)
+}
+.page-header__main-container{
+    height: 250px;
+    border-bottom: 1px solid #e9e9e9;
+    box-sizing: border-box;
+}
+.page-header__nav-container{
+    @include flex($just: space-between);
+    border-top: 1px solid #e9e9e9;
+    height: 60px;
+}
+.page-header__main-wrapper,
+.page-header__nav-wrapper{
+    width: 1260px;
+    height: 100%;
+    @include flex($just: space-between, $align: center);
+    margin: auto;
+}

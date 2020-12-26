@@ -1,0 +1,38 @@
+.button{
+    position: relative;
+    width: 150px;
+    height: 46px;
+    background-color: $main-yellow;
+    border: none;
+    font-family: "Myriad Pro";
+    @include font($size: 18px, $weight: bold, $height: 18px, $space: 0px);
+    @include text($align: center, $color: black, $trans: uppercase);
+    &--main-gallery::after{
+        content: "";
+        display: block;
+        width: 10px;
+        height: 10px;
+        background: url('/img/corner-black.png');
+        position: absolute;
+        top: 3px;
+        right: 3px;
+    }
+    &--article-image{
+        width: 250px;
+        height: 80px;
+        position: absolute;
+        background: none;
+        border: 2px solid #d9d4ec;
+        border-radius: 2px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        font-family: "Myriad Pro";
+        @include font($size: 26px, $weight: bold, $space: 5px);
+        @include text($align: center, $color: white, $decor: none, $trans: uppercase);
+        font-size: 26px;
+    }
+}

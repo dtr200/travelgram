@@ -1,0 +1,32 @@
+.social{    
+    @include flex($just: space-between, $align: center);
+    list-style-type: none;
+    padding-left: 0;
+    &--article-list{
+        width: auto;
+        justify-content: flex-start;
+        gap: 26px;
+    }
+    &--header{
+        width: 190px;
+        line-height: 60px;
+    }
+}
+.social__image{
+    width: 12px;
+    height: 12px;
+    fill: $main-gray;
+    &--article{
+        fill: $main-yellow;
+        width: 25px;
+        height: 25px;
+    }
+}
+.social__share-block{
+    @include flex($direct: column, $align: center);
+}
+.social__share-text{
+    font-family: "Myriad Pro";
+    @include font($size: 23px, $weight: bold, $height: 44px, $space: 5px);
+    @include text($align: center, $color: $main-ligth-gray, $trans: uppercase);
+}

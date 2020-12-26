@@ -1,0 +1,16 @@
+.main-nav{
+    width: 860px;
+}
+.main-nav__list{
+    @include flex();
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 60px;
+    gap: 95px;
+}
+.main-nav__item{
+    text-transform: uppercase;
+    @include font($size: 16px, $weight: bold, $space: 2px);
+    font-family: "Myriad Pro";
+    color: $main-dark-gray;
+}
