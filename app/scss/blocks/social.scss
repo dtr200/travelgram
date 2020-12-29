@@ -21,12 +21,17 @@
         width: 25px;
         height: 25px;
     }
+    &--sidebar{
+        width: 45px;
+        height: 45px;
+        fill: $main-gray;
+    }
 }
 .social__share-block{
     @include flex($direct: column, $align: center);
 }
 .social__share-text{
-    font-family: "Myriad Pro";
+    font-family: $font-myriad-pro;
     @include font($size: 23px, $weight: bold, $height: 44px, $space: 5px);
     @include text($align: center, $color: $main-ligth-gray, $trans: uppercase);
 }

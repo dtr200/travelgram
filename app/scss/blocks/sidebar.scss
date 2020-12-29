@@ -1,9 +1,20 @@
+.sidebar{
+    row-gap: 43px;
+}
 .sidebar__item{
     width: 606px;
     padding: 48px 22px 29px;
     position: relative;
     box-sizing: border-box;
     box-shadow: -10px 35px 35px 0 #c2c2c2;
+    &--about{
+        padding: 48px 0 0;
+    }
+    &--newsletter,
+    &--categories{
+        position: relative;
+        padding: 48px 0 29px;
+    }
 }
 .sidebar__item-header-wrapper{
     width: 460px;   
@@ -20,6 +31,13 @@
         position: relative;
         top: 0;
     }
+    &--newsletter,
+    &--categories{
+        width: auto;
+        height: auto;
+        position: relative;
+        top: auto;
+    }
 }
 .sidebar__item-header{
     display: inline-block;
@@ -29,29 +47,88 @@
     left: 0;
     right: 0;
     margin: auto;
-    font-family: "Myriad Pro";
+    font-family: $font-myriad-pro;
     @include font($size: 30px, $weight: bold);
     @include text($color: #413f3f, $trans: uppercase);   
     background: white;
     box-shadow: 0 0 3px 33px white;
+    &--newsletter,
+    &--categories{
+        font-family: $font-pompiere;
+        @include font($size: 56px, $weight: 400);
+        @include text($color: $post-header-gray, $trans: capitalize);
+        box-shadow: 0 -15px 3px 30px white;
+    }
 }
 .sidebar__item-text{
     display: inline-block;
     margin-top: 40px;
-    font-family: "Myriad Pro";
+    font-family: $font-myriad-pro;
     @include font($size: 26px, $height: 43px);
     @include text($align: center, $color: $main-gray);
+    &--about{
+        display: block;
+        box-shadow: 0 0 0px 25px white;
+    }    
+}
+.sidebar__item-share{
+    margin-bottom: 15px;
+    box-shadow: 0 0 0 15px white;
 }
 .sidebar__item-content{
-    padding-top: 51px;
+    padding-top: 51px;    
     &--about{
-        padding-top: 0;
+        height: 491px;
+        background: url('/img/i.jpg');
+        background-position: -280px -700px;
+        background-size: 270%;
+        margin-top: 10px;
     }
+}
+.sidebar__item-form{
+    @include flex($direct: column);
+    margin-top: 50px;
+    gap: 27px;
+    box-shadow: 0 -16px 0 16px white;
+}
+.sidebar__item-form-text{
+    border: none;
+    border-bottom: 1px solid black;
+    font-family: $font-merriweather;
+    @include font($size: 26px, $weight: 300);
+    @include text($align: center, $color: $main-ligth-gray);
+    font-style: italic;
+}
+.sidebar__item-form-submit{
+    height: 58px;
+    background-color: $sign-up-button;
+    border: none;
+    font-family: $font-dosis;
+    @include font($size: 26px, $weight: 600, $space: 5px);
+    color: white;
+    margin-bottom: 59px; 
 }
 .sidebar__image{
     box-shadow: 0px -15px 0px 3px white;
     &--about{
+        height: 491px;
         box-shadow: none;
         margin-top: 10px;
+    }
+}
+.sidebar__item-categories-list{
+    padding-left: 0;
+    list-style-type: none;
+    padding: 7px 50px 0;
+    box-shadow: 0 0 0 3px white;
+    margin-top: 23px;
+}
+.sidebar__item-categories{
+    font-family: $font-myriad-pro;
+    @include font($size: 27px, $height: 57px);
+    @include text($align: center, $color: $main-gray);
+    border-bottom: 1px solid $border-gray;
+    &:last-child{
+        border-bottom: none;
     }
 }

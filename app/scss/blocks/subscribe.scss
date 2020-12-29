@@ -5,7 +5,7 @@
     background-color: #fff;
     @include font($size: 14px, $weight: 600, $space: 3px);
     font-family: $font-dosis;
-    color: #242929;
+    color: $main-dark-gray;
     text-transform: uppercase;
     vertical-align: middle;
 }

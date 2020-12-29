@@ -5,7 +5,7 @@
 }
 .search-form__input{
     @include font($size: 14px, $weight: 300);
-    font-family: "Merriweather";
+    font-family: $font-merriweather;
     font-style: italic;
     color:$main-ligth-gray;
     border: none;

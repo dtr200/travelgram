@@ -13,7 +13,7 @@
 }
 .main-gallery__tagline-header{
     display: block;
-    font-family: "Bank Gothic BT";
+    font-family: $font-bank-gothic-bt;
     @include font($size: 48px, $weight: 300, $height: 36px);  
     color: white;   
 }
@@ -36,12 +36,12 @@
     }
 }
 .main-gallery__blog{
-    font-family: "Myriad Pro";
+    font-family: $font-myriad-pro;
     @include font($size: 18px, $weight: bold, $height: 19px);
     @include text($align: center, $color: white, $trans: uppercase);
 }
 .main-gallery__header{
-    font-family: "Zurich BT";
+    font-family: $font-zurich-bt;
     @include font($size: 44px, $weight: 800, $height: 34px, $space: -1px);
     @include text($color: white, $trans: uppercase);
 }
@@ -63,34 +63,13 @@
         background-color: $red;
     }
 }
-/* .main-gallery__button{
-    position: relative;
-    width: 150px;
-    height: 46px;
-    margin: 0 0 37px 0;
-    background-color: $main-yellow;
-    border: none;
-    font-family: "Myriad Pro";
-    @include font($size: 18px, $weight: bold, $height: 18px, $space: 0px);
-    @include text($color: black, $trans: uppercase);
-    &::after{
-        content: "";
-        display: block;
-        width: 10px;
-        height: 10px;
-        background: url('/img/corner-black.png');
-        position: absolute;
-        top: 3px;
-        right: 3px;
-    }
-} */
 .main-gallery__text{
     @include flex($direct: column);
 }
 .main-gallery__description{
     width: 517px;
     margin: 19px 0 33px 0;
-    font-family: "Myriad Pro";
+    font-family: $font-myriad-pro;
     @include font($size: 15px, $height: 19px, $space: 0px);
     color: white;    
 }

@@ -37,7 +37,7 @@
 }
 .article__blog-section,
 .article__header{
-    font-family: "Nirmala UI";
+    font-family: $font-nirmala-ui;
     @include font($size: 24px, $weight: bold, $height: 60px, $space: 5px);
     @include text($color: $main-yellow, $trans: uppercase);
 }
@@ -57,13 +57,13 @@
         margin-bottom: 0;
     }
     &--smallblock{
-        font-family: "Nirmala UI";
+        font-family: $font-nirmala-ui;
         @include font($size: 27px, $weight: bold, $height: 60px, $space: 5px);
         @include text($align: center, $color: $post-header-gray);
     }
 }
 .article__description{
-    font-family: "Myriad Pro";
+    font-family: $font-myriad-pro;
     @include font($size: 23px, $height: 35px);
     @include text($color: $post-font-gray);
     &--none{
@@ -144,7 +144,7 @@
         width: 819px; */
         position: static;
         margin: 38px 0 62px;
-        font-family: "Nirmala UI";
+        font-family: $font-nirmala-ui;
         @include font($size: 30px, $weight: bold, $space: 6px);
         color: $main-ligth-gray;
     }
@@ -152,11 +152,11 @@
 .article__date,
 .article__likes,
 .article__comments{
-    font-family: "Myriad Pro";
+    font-family: $font-myriad-pro;
     @include font($size: 29px, $weight: bold);
     &--bigblock{        
         color: $main-ligth-gray;
-        font-family: "Nirmala UI";
+        font-family: $font-nirmala-ui;
         @include font($size: 30px, $weight: bold, $space: 6px);
     }
 }

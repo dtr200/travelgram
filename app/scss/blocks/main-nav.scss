@@ -11,6 +11,6 @@
 .main-nav__item{
     text-transform: uppercase;
     @include font($size: 16px, $weight: bold, $space: 2px);
-    font-family: "Myriad Pro";
+    font-family: $font-myriad-pro;
     color: $main-dark-gray;
 }

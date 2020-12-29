@@ -1,5 +1,5 @@
 .page-header{
-    width: 1920px;
+    width: $max-width;
     height: 313px;
     @include flex($just: space-between, $direct: column)
 }
