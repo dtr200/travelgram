@@ -1,5 +1,6 @@
 .sidebar{
-    row-gap: 43px;
+    @include flex($direct: column);
+    gap: 43px;
 }
 .sidebar__item{
     width: 606px;
@@ -11,9 +12,13 @@
         padding: 48px 0 0;
     }
     &--newsletter,
-    &--categories{
+    &--categories,
+    &--recent{
         position: relative;
-        padding: 48px 0 29px;
+        padding: 48px 0 0;
+    }
+    &--tags{
+        padding: 48px 0 49px;
     }
 }
 .sidebar__item-header-wrapper{
@@ -32,7 +37,8 @@
         top: 0;
     }
     &--newsletter,
-    &--categories{
+    &--categories,
+    &--recent{
         width: auto;
         height: auto;
         position: relative;
@@ -53,11 +59,16 @@
     background: white;
     box-shadow: 0 0 3px 33px white;
     &--newsletter,
-    &--categories{
+    &--categories,
+    &--recent,
+    &--tags{
         font-family: $font-pompiere;
         @include font($size: 56px, $weight: 400);
         @include text($color: $post-header-gray, $trans: capitalize);
         box-shadow: 0 -15px 3px 30px white;
+    }
+    &--tags{
+        box-shadow: 0 -25px 3px 30px white;
     }
 }
 .sidebar__item-text{
@@ -116,19 +127,63 @@
         margin-top: 10px;
     }
 }
-.sidebar__item-categories-list{
+.sidebar__item-list{
     padding-left: 0;
     list-style-type: none;
     padding: 7px 50px 0;
     box-shadow: 0 0 0 3px white;
     margin-top: 23px;
+    &--recent{
+        padding: 31px 22px 0;
+        gap: 25px;
+        box-shadow: 0 7px 0 9px white;
+    }
+    &--tags{
+        @include grid($cols: 1fr 1fr);
+        justify-items: center;
+        gap: 33px;
+        padding: 15px 22px 0;
+    }
 }
-.sidebar__item-categories{
+.sidebar__item-list-li{
     font-family: $font-myriad-pro;
     @include font($size: 27px, $height: 57px);
     @include text($align: center, $color: $main-gray);
     border-bottom: 1px solid $border-gray;
-    &:last-child{
+    &--categories:last-child{
         border-bottom: none;
     }
+    &--recent{
+        @include flex();
+        text-align: left;
+        gap: 42px;
+        border-bottom: none;
+        margin-bottom: 16px;
+    }
+    &--recent:last-child{
+        margin-bottom: none;
+    }
+    &--tags{
+        width: 213px;
+        height: 46px;
+        border: 2px solid $main-yellow;
+        font-family: $font-myriad-pro;
+        font-size: 35px;
+        @include flex($align: center);
+        padding-left: 8px;
+        @include text($color: $main-dark-gray, $trans: uppercase);
+    }
+}
+.sidebar__item-img{
+    width: 186px;
+    height: 104px;
+}
+.sidebar__content-title,
+.sidebar__content-date{
+    font-family: $font-open-sans;
+    @include font($size: 28px, $weight: 400, $height: 28px);
+    @include text($align: left, $color: $post-header-gray);
+}
+.sidebar__content-date{
+    color: $main-ligth-gray;
 }
