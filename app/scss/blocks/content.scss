@@ -1,6 +1,8 @@
 .content{
+    width: $max-width;
     display: grid;
     grid-template-columns: 1fr 2fr;
     padding: 0 10px;
     gap: 35px;
+    box-sizing: border-box;
 }

@@ -70,6 +70,10 @@
     &--tags{
         box-shadow: 0 -25px 3px 30px white;
     }
+    &--contact{
+        box-shadow: none;
+        background-color: unset;
+    }
 }
 .sidebar__item-text{
     display: inline-block;
@@ -186,4 +190,38 @@
 }
 .sidebar__content-date{
     color: $main-ligth-gray;
+}
+.sidebar__contact-form{
+    @include flex($direct: column);
+    gap: 15px;
+}
+.sidebar__input-field{
+    height: 49px;
+    padding-left: 20px;
+}
+.sidebar__textarea{
+    height: 188px;
+    padding: 20px 0 0 20px;
+}
+.sidebar__input-field,
+.sidebar__textarea{
+    border: 2px solid #f4f7f9;
+    background-color: #fafbfc;
+    font-family: $font-open-sans;
+    @include font($size: 13px, $weight: 400);
+    color: $input-gray;
+}
+.sidebar__textarea::before{
+    content: attr(data-area);
+}
+.sidebar__submit{
+    width: 117px;
+    height: 52px;
+    background-color: $main-yellow;
+    border-radius: 2px;
+    border: none;
+    margin: auto;
+    font-family: $font-open-sans;
+    @include font($size: 33px, $weight: 400);
+    color: #0a0a0a;
 }

@@ -11,7 +11,7 @@
         flex-direction: column-reverse;
     }
     &--bigblock-bottom{
-        margin-bottom: 90px;
+        margin-bottom: 0;
     }
     &--fourth{
         @include grid($cols: 1fr 1fr);

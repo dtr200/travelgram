@@ -1,4 +1,5 @@
 .main-gallery{
+    width: $max-width;
     @include flex($just: space-between, $direct: column);
     background: url('/img/header.jpg');
     background-size: cover;
@@ -6,6 +7,7 @@
     padding: 152px 0 93px 40px;
     margin-bottom: 40px;
     box-shadow: 0px 25px 25px 0 #c2c2c2;
+    box-sizing: border-box;
 }
 .main-gallery__tagline{
     display: block;
