@@ -1,31 +1,48 @@
 .sidebar{
     @include flex($direct: column);
-    gap: 43px;
+    max-width: 32.74%;
+    width: 100%;
 }
 .sidebar__item{
-    width: 606px;
-    padding: 48px 22px 29px;
+    padding: 7.717% 3.537% 4.663%;
     position: relative;
     box-sizing: border-box;
-    box-shadow: -10px 35px 35px 0 #c2c2c2;
+    box-shadow: -.521vw .781vw .781vw 0 #c2c2c2;
+    &--position{
+        margin-bottom: 6.913%;
+    }
     &--about{
-        padding: 48px 0 0;
+        padding: 7.2345% 0 0;
+        margin-bottom: 6.43%;
     }
     &--newsletter,
     &--categories,
     &--recent{
         position: relative;
-        padding: 48px 0 0;
+        margin-bottom: 5.627%;
+        padding: 9% 0 0;
+    }
+    &--categories{
+        padding: 8.521% 0 0;
+        margin-bottom: 7.235%;
+    }
+    &--newsletter{
+        padding: 6.592% 0 0;
+        margin: 78.939% 0 6.27%;
     }
     &--tags{
-        padding: 48px 0 49px;
+        padding: 9.4855% 0 0;
+        margin-bottom: 7.717%;
+    }
+    &--contact{
+        padding: 13.183% 3.537% 3.698%;
     }
 }
 .sidebar__item-header-wrapper{
-    width: 460px;   
-    height: 60px;
+    width: 73.955%;   
+    height: 6.689%;
     position: absolute;
-    top: 48px;    
+    top: 5.351%;    
     left: 0;
     right: 0;
     margin: auto;
@@ -43,6 +60,7 @@
         height: auto;
         position: relative;
         top: auto;
+        padding-bottom: 2.572%;
     }
 }
 .sidebar__item-header{
@@ -54,32 +72,36 @@
     right: 0;
     margin: auto;
     font-family: $font-myriad-pro;
-    @include font($size: 30px, $weight: bold);
+    @include font($size: 1.5625vw, $weight: bold);
     @include text($color: #413f3f, $trans: uppercase);   
     background: white;
-    box-shadow: 0 0 3px 33px white;
+    box-shadow: 0 -.521vw .1563vw 1.719vw white;
     &--newsletter,
     &--categories,
     &--recent,
     &--tags{
         font-family: $font-pompiere;
-        @include font($size: 56px, $weight: 400);
+        @include font($size: 2.9167vw, $weight: 400);
         @include text($color: $post-header-gray, $trans: capitalize);
-        box-shadow: 0 -15px 3px 30px white;
+        box-shadow: 0 -.7813vw .1563vw 1.5625vw white;
     }
     &--tags{
-        box-shadow: 0 -25px 3px 30px white;
+        box-shadow: 0 -1.512vw 0.1563vw 1.5625vw white;
+    }
+    &--categories{
+        box-shadow: 0 -1.221vw 0.1563vw 1.719vw white;
     }
     &--contact{
         box-shadow: none;
         background-color: unset;
+        top: 4.545%;
     }
 }
 .sidebar__item-text{
     display: inline-block;
-    margin-top: 40px;
+    margin-top: 8.696%;
     font-family: $font-myriad-pro;
-    @include font($size: 26px, $height: 43px);
+    @include font($size: 1.3542vw, $height: 2.2396vw);
     @include text($align: center, $color: $main-gray);
     &--about{
         display: block;
@@ -87,22 +109,25 @@
     }    
 }
 .sidebar__item-share{
-    margin-bottom: 15px;
+    margin-bottom: 3.261%;
     box-shadow: 0 0 0 15px white;
 }
 .sidebar__item-content{
-    padding-top: 51px;    
+    padding-top: 8.82%;    
     &--about{
-        height: 491px;
+        width: 100%;
+        height: 134.524%;
         background: url('/img/i.jpg');
         background-position: -280px -700px;
         background-size: 270%;
-        margin-top: 10px;
+        margin-top: 1.608%;
+        padding-top: 0;
+        box-shadow: -10px 15px 15px 0 #c2c2c2;
     }
 }
 .sidebar__item-form{
     @include flex($direct: column);
-    margin-top: 50px;
+    margin-top: 11.364%;
     gap: 27px;
     box-shadow: 0 -16px 0 16px white;
 }
@@ -110,20 +135,21 @@
     border: none;
     border-bottom: 1px solid black;
     font-family: $font-merriweather;
-    @include font($size: 26px, $weight: 300);
+    @include font($size: 1.3542vw, $weight: 300);
     @include text($align: center, $color: $main-ligth-gray);
     font-style: italic;
 }
 .sidebar__item-form-submit{
-    height: 58px;
+    padding: 1.948% 0 2.11%;
     background-color: $sign-up-button;
     border: none;
     font-family: $font-dosis;
-    @include font($size: 26px, $weight: 600, $space: 5px);
-    color: white;
-    margin-bottom: 59px; 
+    @include font($size: 1.3542vw, $weight: 600, $space: .2604vw);
+    @include text($align: center, $color: white, $trans: uppercase);
+    margin-bottom: 9.578%; 
 }
 .sidebar__image{
+    max-width: 100%;
     box-shadow: 0px -15px 0px 3px white;
     &--about{
         height: 491px;
@@ -134,58 +160,57 @@
 .sidebar__item-list{
     padding-left: 0;
     list-style-type: none;
-    padding: 7px 50px 0;
+    padding: 1.136% 8.117% 0;
     box-shadow: 0 0 0 3px white;
-    margin-top: 23px;
+    margin-top: 3.734%;
     &--recent{
-        padding: 31px 22px 0;
-        gap: 25px;
+        padding: 5.03% 3.571% 5.52%;
         box-shadow: 0 7px 0 9px white;
     }
     &--tags{
         @include grid($cols: 1fr 1fr);
         justify-items: center;
-        gap: 33px;
-        padding: 15px 22px 0;
+        gap: 0 5.357%;
+        padding: 2.435% 3.571% 3.2154%;
     }
 }
 .sidebar__item-list-li{
     font-family: $font-myriad-pro;
-    @include font($size: 27px, $height: 57px);
+    @include font($size: 1.40625vw, $height: 2.9688vw);
     @include text($align: center, $color: $main-gray);
     border-bottom: 1px solid $border-gray;
     &--categories:last-child{
         border-bottom: none;
     }
     &--recent{
+        max-height: 104px;
         @include flex();
         text-align: left;
-        gap: 42px;
+        gap: 7.34%;
         border-bottom: none;
-        margin-bottom: 16px;
+        margin-bottom: 2.8%;
     }
     &--recent:last-child{
         margin-bottom: none;
     }
     &--tags{
-        width: 213px;
-        height: 46px;
+        width: 94.643%;
         border: 2px solid $main-yellow;
         font-family: $font-myriad-pro;
-        font-size: 35px;
-        @include flex($align: center);
-        padding-left: 8px;
+        @include flex($align: center); 
+        @include font($size: 2.1354vw, $height: 2.1404vw);               
         @include text($color: $main-dark-gray, $trans: uppercase);
+        padding-left: 2.963%;
+        margin-bottom: 10%;
     }
 }
 .sidebar__item-img{
-    width: 186px;
-    height: 104px;
+    width: 32.5%;
 }
 .sidebar__content-title,
 .sidebar__content-date{
     font-family: $font-open-sans;
-    @include font($size: 28px, $weight: 400, $height: 28px);
+    @include font($size: 1.4583vw, $weight: 400, $height: 1.4583vw);
     @include text($align: left, $color: $post-header-gray);
 }
 .sidebar__content-date{
@@ -193,35 +218,36 @@
 }
 .sidebar__contact-form{
     @include flex($direct: column);
-    gap: 15px;
 }
 .sidebar__input-field{
-    height: 49px;
-    padding-left: 20px;
+    padding-left: 3.46%;
+    padding: 2.076% 0 2.249% 3.46%;
+    margin-bottom: 2.595%;
 }
 .sidebar__textarea{
     height: 188px;
-    padding: 20px 0 0 20px;
+    padding: 3.745% 0 0 3.745%;
+    box-sizing: border-box;
 }
 .sidebar__input-field,
 .sidebar__textarea{
     border: 2px solid #f4f7f9;
     background-color: #fafbfc;
     font-family: $font-open-sans;
-    @include font($size: 13px, $weight: 400);
+    @include font($size: .677vw, $weight: 400);
     color: $input-gray;
 }
 .sidebar__textarea::before{
     content: attr(data-area);
 }
 .sidebar__submit{
-    width: 117px;
-    height: 52px;
+    width: 20.242%;
     background-color: $main-yellow;
     border-radius: 2px;
     border: none;
-    margin: auto;
+    margin: 3.806% auto 0;
+    padding: 1.664% 0 1.848%;
     font-family: $font-open-sans;
-    @include font($size: 33px, $weight: 400);
+    @include font($size: 1.7188vw, $weight: 400, $height: 1.7188vw);
     color: #0a0a0a;
 }

@@ -8,13 +8,19 @@
         gap: 26px;
     }
     &--header{
-        width: 190px;
-        line-height: 60px;
+        max-width: 190px;
+        width: 100%;
+    }
+    &--footer{
+        width: 100%;
     }
 }
+.social__item{    
+    &--footer{
+        max-width: 165px;
+    }   
+}
 .social__image{
-    width: 12px;
-    height: 12px;
     fill: $main-gray;
     &--article{
         fill: $main-yellow;
@@ -31,7 +37,29 @@
     @include flex($direct: column, $align: center);
 }
 .social__share-text{
-    font-family: $font-myriad-pro;
-    @include font($size: 23px, $weight: bold, $height: 44px, $space: 5px);
+    font-family: $font-neoteric;
+    @include font($size: 1.198vw, $weight: bold, $height: 2.292vw, $space: .2604vw);
     @include text($align: center, $color: $main-ligth-gray, $trans: uppercase);
+    &--about{
+        font-size: 2.24vw;
+        text-transform: none;
+        margin: 8.696% 0 4.348%;
+    }
+    &--article{
+        font-family: $font-myriad-pro;
+        @include font($size: 1.198vw, $height: 1.198vw, $weight: bold, $space: .2604vw);
+        @include text($color: $main-ligth-gray, $trans: uppercase);
+    }
+}
+.social__name{
+    font-family: $font-myriad-pro;
+    @include font($size: .7292vw, $weight: bold);
+    @include text($color: $main-gray, $trans: uppercase);
+}
+.social__link{
+    text-decoration: none;
+    &--footer{
+    @include flex($align: center);
+    gap: 12px;
+    }
 }

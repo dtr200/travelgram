@@ -1,13 +1,12 @@
 .pagination{
     @include flex($just: space-between, $align: center);
-    padding: 0 95px;
+    padding: 0 4.762%;
 }
 .pagination__prev,
 .pagination__next,
 .pagination__page{
     text-decoration: none;
-    color: $main-gray;    
-    font-family: "Font Awesome";
+    color: $main-gray;
     font-size: 21px;
 }
 .pagination__page{

@@ -1,16 +1,34 @@
 .main-nav{
-    width: 860px;
+    max-width: 860px;
+    width: 100%;
+    &--footer{
+        max-width: 62.2222%;
+        width: 100%;
+        margin-bottom: 2.698%;
+    }
 }
 .main-nav__list{
-    @include flex();
+    @include flex($just: space-between);
     list-style-type: none;
     padding-left: 0;
-    line-height: 60px;
-    gap: 95px;
+    &--footer{
+        gap: unset;
+        line-height: 4.479vw;
+    }
 }
 .main-nav__item{
     text-transform: uppercase;
-    @include font($size: 16px, $weight: bold, $space: 2px);
+    @include font($size: .833vw, $weight: bold, $space: .1042vw);
     font-family: $font-myriad-pro;
+    &--footer{
+        width: 21.046%;
+        text-align: center;
+    }
+}
+.main-nav__link{
+    text-decoration: none;
     color: $main-dark-gray;
+    &--active{
+        color: $main-yellow;
+    }
 }

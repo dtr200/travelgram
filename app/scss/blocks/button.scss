@@ -1,26 +1,29 @@
 .button{
     position: relative;
-    width: 150px;
-    height: 46px;
+    width: 27.7778%;
     background-color: $main-yellow;
     border: none;
+    padding: 2.8% 0 2.6%;
     font-family: $font-myriad-pro;
-    @include font($size: 18px, $weight: bold, $height: 18px, $space: 0px);
+    @include font($size: .9375vw, $height: .9375vw, $weight: bold, $space: 0);
     @include text($align: center, $color: black, $trans: uppercase);
+    &--main-gallery{
+        width: 8.287%;
+        padding: .829% 0 .663%;
+    }
     &--main-gallery::after{
         content: "";
         display: block;
         width: 10px;
         height: 10px;
-        background: url('/img/corner-black.png');
+        background: linear-gradient(to bottom left, black, black 50%, transparent 50%, transparent);
         position: absolute;
         top: 3px;
         right: 3px;
     }
     &--article-image{
-        width: 250px;
-        height: 80px;
-        position: absolute;
+        width: 41.32%;
+        height: 13.22%;
         background: none;
         border: 2px solid #d9d4ec;
         border-radius: 2px;
@@ -31,8 +34,21 @@
         bottom: 0;
         margin: auto;
         font-family: $font-myriad-pro;
-        @include font($size: 26px, $weight: bold, $space: 5px);
+        @include font($size: 1.354vw, $weight: bold, $space: .26vw);
         @include text($align: center, $color: white, $decor: none, $trans: uppercase);
-        font-size: 26px;
+    }
+    &--image-bigblock{
+        width: 19.82%;
+        padding: 2% 0 3.8%;;
+    }
+    &--bigblock{
+        width: 15.42%;
+        padding: 1.25% 0 1.1667%;
+        @include font($size: 1.51vw, $weight: bold);
+    }
+    &--smallblock{
+        width: 33.636%;
+        padding: 1.25% 0 1.1667%;
+        @include font($size: 1.51vw, $weight: bold);
     }
 }

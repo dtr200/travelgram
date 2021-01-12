@@ -2,7 +2,7 @@
     margin: 0;
     font-weight: 400;
 }
-
+@import 'fonts.scss';
 @import 'variables.scss';
 @import 'mixins.scss';
 @import 'blocks/page-header.scss';
@@ -20,3 +20,6 @@
 @import 'blocks/pagination.scss';
 @import 'blocks/sidebar.scss';
 @import 'blocks/photo.scss';
+@import 'blocks/page-footer.scss';
+@import 'blocks/copyright.scss';
+@import 'blocks/up-button.scss';

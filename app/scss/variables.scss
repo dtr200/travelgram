@@ -1,16 +1,17 @@
 $max-width: 1920px;
+$inner-width: 1260px;
 // Fonts
-$font-dosis: Dosis, sans-serif;  //600
-$font-myriad-pro: Myriad Pro, sans-serif; //bold, normal
-$font-merriweather: Merriweather, sans-serif; //italic 300
-$font-bank-gothic-bt: Bank Gothic BT, sans-serif; // 300
-$font-zurich-bt: Zurich BT, sans-serif; //800
-$font-nirmala-ui: Nirmala UI, sans-serif; // bold
-$font-pompiere: Pompiere, sans-serif; //400
-$font-open-sans: Open Sans, sans-serif; //400, 700
-$font-neoteric: Neoteric, sans-serif; // bold
-$font-helvetica-lt-std: Helvetica LT Std, sans-serif; //
-$font-ostrich-sans: Ostrich Sans, sans-serif; //900
+$font-dosis: 'Dosis', ;
+$font-myriad-pro: 'Myriad Pro';
+$font-merriweather: 'Merriweather';
+$font-bank-gothic-bt: 'Bank Gothic BT';
+$font-zurich-bt: 'Zurich BT';
+$font-nirmala-ui: 'Nirmala UI';
+$font-pompiere: 'Pompiere';
+$font-open-sans: 'Open Sans';
+$font-neoteric: 'Neoteric';
+$font-helvetica-lt-std: 'Helvetica LT Std';
+$font-ostrich-sans: 'Ostrich Sans';
 // Colors
 $main-yellow: #ffc908;
 $main-dark-gray: #242929;
@@ -24,3 +25,4 @@ $input-gray: #777;
 $border-gray: #e9e9e9;
 $red: #e21712;
 $sign-up-button: #a9b3e3;
+$awesome: #afdbdc;

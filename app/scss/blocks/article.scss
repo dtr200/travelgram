@@ -1,70 +1,81 @@
 .article{
     @include flex();
     position: relative;
-    box-shadow: -10px 35px 35px 0 #c2c2c2;
+    box-shadow: -.521vw 1.823vw 1.823vw 0 #c2c2c2;
     &--second{
         flex-direction: row-reverse;
         justify-content: space-between;
-        margin-bottom: 130px;
+        margin-bottom: 10.3175%;
     }
     &--bigblock{
-        flex-direction: column-reverse;
+        flex-direction: column;
+        margin-bottom: 5.714%;
     }
     &--bigblock-bottom{
         margin-bottom: 0;
     }
     &--fourth{
         @include grid($cols: 1fr 1fr);
+        margin-bottom: 5.714%;
     }
     &--fourth-item{
-        flex-direction: column-reverse;
+        flex-direction: column;
         box-shadow: none;
     }
 }
 .article__text{
-    width: 500px;
-    padding: 45px 0 45px 40px;
+    max-width: 39.7%;
+    padding: 3.57% 0 3.57% 3.18%;
     &--second{
-        padding-right: 95px;
+        padding-right: 7.54%;
     }
     &--bigblock{
-        width: auto;
-        padding: 30px 10px 43px 35px;
+        max-width:100%;
+        padding: 47.62% .794% 3.41% 2.778%;
+        //padding-top: 600px; 2.381%
     }
     &--smallblock{
-        padding: 60px 36px;
+        max-width: 100%;
+        padding: 631px 5.788% 9.001%; //9.001% верх низ
     }
-}
-.article__blog-section,
-.article__header{
-    font-family: $font-nirmala-ui;
-    @include font($size: 24px, $weight: bold, $height: 60px, $space: 5px);
-    @include text($color: $main-yellow, $trans: uppercase);
 }
 .article__blog-section{
-    line-height: 24px;
+    font-family: $font-nirmala-ui;
+    @include font($size: .9375vw, $weight: bold, $height: 133%, $space: .2604vw);
+    @include text($color: $main-yellow, $trans: uppercase);
     &--smallblock{
-        margin-bottom: 30px;
         text-align: center;
+    }
+    &--bigblock{
+        @include font($size: 1.042vw, $weight: bold, $space: .3125vw);
+        margin-bottom: .238%;
     }
 }
 .article__header{
+    font-family: $font-nirmala-ui;
     @include text($color: $post-header-gray, $trans: none);
+    @include font($size: 1.4583vw, $weight: normal, $height: 3.125vw, $space: .2604vw);
     border-bottom: 3px solid #dde1f4;
-    margin-bottom: 13px;
+    margin-bottom: 2.6%;
+    padding: 2% 0 2.6%;
+    &--bigblock{        
+        width: 80%;
+        @include font($size: 1.5625vw, $weight: normal, $height: 3.125vw, $space: .3125vw);
+    }
     &--border-none{
         border-bottom: none;
         margin-bottom: 0;
     }
     &--smallblock{
         font-family: $font-nirmala-ui;
-        @include font($size: 27px, $weight: bold, $height: 60px, $space: 5px);
+        @include font($size: 1.4583vw, $height: 3.125vw);
         @include text($align: center, $color: $post-header-gray);
+        padding-bottom: 0;
     }
 }
 .article__description{
     font-family: $font-myriad-pro;
-    @include font($size: 23px, $height: 35px);
+    @include font($size: 1.25vw, $height: 1.823vw, $space: .1042vw);
     @include text($color: $post-font-gray);
     &--none{
         display: none;
@@ -72,10 +83,17 @@
 }
 .article__interactive{
     @include flex($just: space-between);
-    margin-top: 70px;
+    margin-top: 14%;
+    &--bigblock{
+        margin-top: 0;
+    }
+    &--smallblock{
+        margin-top: 0;
+    }
 }
 .article__share-block{
-    @include flex($just: center);
+    @include flex($just: center, $align: center);
+    gap: 7%;
     &--bigblock{
         flex-direction: column;
     }
@@ -86,66 +104,63 @@
     justify-content: flex-end;
 }
 .article__image{
-    width: 608px;
-    height: 601px;
-    background: url('/img/absolute-block.jpg');
+    width: 48.016%;
+    height: 131.51%;
     position: absolute;
-    right: 35px;
-    top: -85px;
-    box-shadow: 0px 45px 35px 0 #c2c2c2;
+    right: 2.77778%;
+    top: -19.256%; // от высоты родительского блока
+    background: url('/img/absolute-block.jpg');
+    box-shadow: 0px 2.344vw 1.823vw 0 #c2c2c2;
     &--second{
-        width: 570px;
-        height: 598px;
+        width: 45.24%;
+        height: 125.37%;
         background: url('/img/absolute-block2.jpg');
-        top: -61px;
+        top: -12.98%;
         left: 0;
     }
     &--bigblock{
-        width: 1260px;
-        height: 570px;
+        width: 100%;
+        height: 60.768%;
         background: url('/img/road.jpg');
-        position: relative;
         top: 0;
         left: 0;
         box-shadow: none;
     }
     &--bigblock-bottom{
         background: url('/img/lifestyle.jpg');
+        background-position: 0 -190px;
     }
     &--smallblock{
-        width: 592px;
-        height: 575px;
+        width: 95.17%;
+        height: 57.044%;
         background: url('/img/read-more-2.jpg');
-        position: relative;
         right: 0;
         top: 0;
-        box-shadow: 0px 20px 35px 0 #c2c2c2;
+        box-shadow: 0px 1.042vw 1.823vw 0 #c2c2c2;
     }
     &--smallblock-two{
         background: url('/img/read-more-1.jpg');
     }
 }
+.article__img{
+    max-width: 100%;
+}
 .article__info-wrapper{
     width: 100%;
     position: absolute;
-    bottom: 68px;
+    bottom: 11.7%;
     @include text($align: center, $color: white, $decor: none);
     font-style: italic;
     &--bigblock{
         color: $main-ligth-gray;
-        bottom: 145px;
         text-align: end;
         position: static;
     }
     &--smallblock{
-        /* position: relative;
-        font-style: normal;
-        color: $main-ligth-gray;
-        width: 819px; */
         position: static;
-        margin: 38px 0 62px;
+        margin: 2.727% 0 10.909%;
         font-family: $font-nirmala-ui;
-        @include font($size: 30px, $weight: bold, $space: 6px);
+        @include font($size: 1.5625vw, $weight: bold, $space: .3125vw);
         color: $main-ligth-gray;
     }
 }
@@ -153,10 +168,21 @@
 .article__likes,
 .article__comments{
     font-family: $font-myriad-pro;
-    @include font($size: 29px, $weight: bold);
+    @include font($size: .78125vw, $space: .15625vw);
+    font-style: normal;
     &--bigblock{        
         color: $main-ligth-gray;
         font-family: $font-nirmala-ui;
-        @include font($size: 30px, $weight: bold, $space: 6px);
+        @include font($size: .9375vw, $weight: bold, $space: .3125);
     }
+    &--smallblock{
+        @include font($size: 1.3542vw, $weight: normal, $space: .1042vw);
+    }
+}
+.article__fontawesome{
+    font-size: 23px;
+    color: $awesome;
+}
+.article__awesome-color{
+    color: $awesome;
 }

@@ -1,0 +1,9 @@
+.copyright{
+    width: 100%;
+    @include flex($just: flex-end, $align: center);
+    gap: 40px;
+    font-family: $font-helvetica-lt-std;
+    @include font($size: 1.4063vw, $space: .1042vw, $height: 3.542vw);
+    color: #645a5a;
+    padding-right: .521%;
+}

@@ -1,3 +1,20 @@
 .page-footer{
-    width: $max-width;
+    max-width: $max-width;
+    @include flex($align: center, $direct: column);
+    position: relative;
+}
+.page-footer__social-container{
+    max-width: $inner-width;
+    width: 100%;
+    margin: 2.6042% 0;
+}
+.page-footer__wrapper{
+    width: 100%;
+    background-color: #737373;
+    padding-top: 2.6042%;
+}
+.page-footer__container{
+    max-width: $inner-width;
+    margin: 0 auto;
+    @include flex($align: center, $direct: column);    
 }
