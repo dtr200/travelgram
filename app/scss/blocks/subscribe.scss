@@ -8,4 +8,7 @@
     color: $main-dark-gray;
     text-transform: uppercase;
     vertical-align: middle;
+    &:hover{
+        background-color: $main-yellow;
+    }
 }

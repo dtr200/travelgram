@@ -18,7 +18,7 @@
 .social__item{    
     &--footer{
         max-width: 165px;
-    }   
+    }
 }
 .social__image{
     fill: $main-gray;
@@ -30,6 +30,15 @@
     &--sidebar{
         width: 45px;
         height: 45px;
+        fill: $main-gray;
+    }
+    &--sidebar:hover{
+        fill: $main-yellow;
+    }
+    &:hover{
+        fill: $main-yellow;
+    }
+    &--article:hover{
         fill: $main-gray;
     }
 }
@@ -61,5 +70,9 @@
     &--footer{
     @include flex($align: center);
     gap: 12px;
+    }
+    &--footer:hover *{
+        color: $main-yellow;
+        fill: $main-yellow;
     }
 }

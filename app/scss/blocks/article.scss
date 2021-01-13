@@ -32,11 +32,10 @@
     &--bigblock{
         max-width:100%;
         padding: 47.62% .794% 3.41% 2.778%;
-        //padding-top: 600px; 2.381%
     }
     &--smallblock{
         max-width: 100%;
-        padding: 631px 5.788% 9.001%; //9.001% верх низ
+        padding: 107.8% 5.788% 9.001%;
     }
 }
 .article__blog-section{
@@ -141,6 +140,17 @@
     &--smallblock-two{
         background: url('/img/read-more-1.jpg');
     }
+    &:hover{
+        opacity: .9;
+        transition: all .15s ease-in;
+    }
+    &:hover .article__image-button,
+    &:hover .article__info-wrapper--regular{
+        display: block;
+    }
+}
+.article__image-button{
+    display: none;
 }
 .article__img{
     max-width: 100%;
@@ -162,6 +172,9 @@
         font-family: $font-nirmala-ui;
         @include font($size: 1.5625vw, $weight: bold, $space: .3125vw);
         color: $main-ligth-gray;
+    }
+    &--regular{
+        display: none;
     }
 }
 .article__date,

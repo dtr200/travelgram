@@ -102,7 +102,7 @@
             </div>
         </div>
     </header>
-    <section class="main-gallery">
+    <section class="main-gallery main-gallery--img2">
         <div class="main-gallery__tagline">
             <h1 class="main-gallery__tagline-header">Traveling</h1>
             <div class="main-gallery__tag-wrapper">
@@ -113,13 +113,13 @@
             <span class="main-gallery__blog">Featured blog</span>
             <div class="main-gallery__main-wrapper">
                 <div class="main-gallery__nav">
-                    <button class="main-gallery__nav-button">
+                    <button class="main-gallery__nav-button main-gallery__nav-button--up">
                         <svg class="main-gallery__arrow main-gallery__arrow--up" width="17px" height="17px" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
                             <path d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 
                             2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z"/>
                         </svg>
                     </button>
-                    <button class="main-gallery__nav-button">
+                    <button class="main-gallery__nav-button main-gallery__nav-button--down">
                         <svg class="main-gallery__arrow main-gallery__arrow--down" width="17px" height="17px" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
                             <path d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 
                             2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z"/>
@@ -228,7 +228,7 @@
             <section class="sidebar__item sidebar__item--newsletter">
                 <div class="sidebar__item-header-wrapper sidebar__item-header-wrapper--newsletter">
                     <span class="sidebar__item-header sidebar__item-header--newsletter">Newsletter</span>
-                    <form action="" class="sidebar__item-form" autocomplete="on">
+                    <form action="#" method="GET" class="sidebar__item-form">
                         <input type="text" class="sidebar__item-form-text" value="Your email address">
                         <input type="submit" class="sidebar__item-form-submit" value="Sing up">
                      </form>
@@ -362,7 +362,7 @@
                         </div>
                             <a href="#" class="article__image">
                                 <button class="article__image-button button button--article-image">Readmore</button>
-                                <div class="article__info-wrapper">
+                                <div class="article__info-wrapper article__info-wrapper--regular">
                                     <span class="article__date">April 19, 2017.</span>
                                     <i class="far fa-heart"></i>
                                     <span class="article__likes">100.</span>
@@ -422,7 +422,7 @@
                         </div>
                         <a class="article__image article__image--second">
                             <button class="article__image-button button button--article-image">Readmore</button>
-                            <div class="article__info-wrapper">
+                            <div class="article__info-wrapper article__info-wrapper--regular">
                                 <span class="article__date">April 19, 2017.</span>
                                 <i class="far fa-heart"></i>
                                 <span class="article__likes">100.</span>
@@ -662,13 +662,11 @@
                             <i class="fas fa-long-arrow-alt-left"></i>
                             <span class="pagination__text">Previous</span>
                         </a>
-                        <div class="pagination__pages">
-                            <div href="#" class="pagination__selected">
-                                <span class="pagination__page pagination__page--selected">1</span>
-                            </div>
-                            <a href="#" class="pagination__page">2</a>
-                            <a href="#" class="pagination__page">3</a>
-                        </div>                    
+                        <ul class="pagination__pages">
+                            <li class='pagination__item'><a href="#" class="pagination__page pagination__page--selected">1</span>
+                            <li class='pagination__item'><a href="#" class="pagination__page">2</a>
+                            <li class='pagination__item'><a href="#" class="pagination__page">3</a>
+                        </ul>                    
                         <a href="#" class="pagination__next">                            
                             <span class="pagination__text">Next</span>
                             <i class="fas fa-long-arrow-alt-right"></i>
@@ -834,6 +832,9 @@
             </button>    
     </footer>
 
+    <script src="js/Gallery.js"></script>
+    <script src="js/Button.js"></script>
+    <script src="js/Pagination.js"></script>
     <script src="js/main.min.js"></script>
 </body>
 </html>

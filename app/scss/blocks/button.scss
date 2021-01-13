@@ -51,4 +51,7 @@
         padding: 1.25% 0 1.1667%;
         @include font($size: 1.51vw, $weight: bold);
     }
+    &:hover{
+        color: white;
+    }
 }
