@@ -8,23 +8,23 @@
     box-shadow: 0px 1.3vw 1.3vw 0 #c2c2c2;
     box-sizing: border-box;
     &--img{
-        background: url('img/trav.jpg') center;
+        background: url('../img/trav.jpg') center;
         transition: all .2s ease-in;
     }
     &--img2{
-        background: url('img/header.jpg') center;
+        background: url('../img/header.jpg') center;
         transition: all .2s ease-in;
     }
     &--img3{
-        background: url('img/trav2.jpg') center;
+        background: url('../img/trav2.jpg') center;
         transition: all .2s ease-in;
     }
     &--img4{
-        background: url('img/trav3.jpg') center;
+        background: url('../img/trav3.jpg') center;
         transition: all .2s ease-in;
     }
     &--img5{
-        background: url('img/trav4.jpg') center;
+        background: url('../img/trav4.jpg') center;
         transition: all .2s ease-in;
     }
 }
